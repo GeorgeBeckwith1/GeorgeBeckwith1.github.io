@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet" />
+
+        <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Just Me Again Down Here' rel='stylesheet' />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hangman</title>
+        <link rel="shortcut icon" href="img/Hangman.png">
+
+        <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1697714110847933",
+            enable_page_level_ads: true
+          });
+        </script> -->
+    </head>
+    <body>
+        <div>
+            <h1 id ="hangmanTitle"><center>Hangman</center></h1>
+            <input id="restartButton" class="restart-button restart-button-shaddow" type="button" value="Restart" onClick="window.location.reload()">
+        </div>
+        <div id="livesCounter" align="middle">
+            <div>
+                <label>Lives Used: </label>
+                <label id="lives-used">
+            </div>
+            <div>
+                <label>Lives Remaining: </label>
+                <label id="lives-remain">
+            </div>
+        </div>
+        <br />
+        <div id="letters-container" align="middle"></div>
+        <br />
+        <div id="boxButton" align ="middle">
+            <input id="userGuess" maxlength="1" autocomplete="off" placeholder="Please enter a letter" />
+            <button id="guessButton" class="guess-button guess-button-shaddow" onclick="handleGuess()">Guess</button>
+        </div>
+        <br />
+        <div id="failedChar" align="middle"></div>
+        <div id="gameWon" align="middle"></div>
+        <div id="gameLost" align="middle"></div>
+        <p id="answer" align="middle"> </p>
+        <p id="usedWord" align="middle" > </p>
+        <br />
+        <div align="center">
+            <canvas id="hangmanCanvas" width="200" height="200" align"middle" ></canvas>
+        </div> 
+        
+        <div align="center" id="nameTagGeorgeBeckwith">
+            <p>By George Beckwith</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

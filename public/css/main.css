@@ -1,0 +1,152 @@
+/*Fonts used:
+Gloria Hallelujah
+Indie Flower
+Just Me Again Down Here
+*/
+body {
+    background-color: #00CED1;
+    font-family: 'Indie Flower';
+    font-size: 25px;
+}
+
+.restart-button {
+    position:absolute;
+    transition: .5s ease;
+    top: 1%;
+    left: 0%;
+    background-color: #1E88E5;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gloria Hallelujah';
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 6px;
+}
+.restart-button-shaddow {
+    box-shadow: 0 8px 16px 0 rgba(1,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.19);
+}
+.restart-button-shaddow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#hangmanTitle {
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah';
+}
+
+#livesCounter {
+    border-radius:  5px;
+    background-color: #1E88E5;
+    padding: 3px;
+    display: table;
+    color: white;
+    font-size: 20px;
+
+    position: absolute;
+    left: 44%;
+    top: 18%;
+    width: 152px;
+}
+
+#letters-container {
+    letter-spacing: 10px;
+    position: absolute;
+    left: 0;
+    top: 31%;
+    width: 100%;
+}
+
+#usedWord {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+}
+
+#userGuess {
+    font-family: 'Indie Flower';
+    font-size: 12.5px;
+    width: 110px;
+}
+
+.guess-button {
+    background-color: #1E88E5;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Indie Flower';
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 6px;
+}
+.guess-button-shaddow {
+    box-shadow: 0 8px 16px 0 rgba(1,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.19);
+}
+.guess-button-shaddow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#boxButton {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+}
+
+#hangmanCanvas{
+    position: absolute;
+    left: 0;
+    top: 55%;
+}
+
+#failedChar {
+    letter-spacing: 7px;
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 100%;
+}
+
+#gameWon {
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah';
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+}
+
+#gameLost {
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah';
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+}
+
+#answer {
+    position: absolute;
+    left: 0;
+    top:70%;
+    width: 100%;
+}
+
+#nameTagGeorgeBeckwith {
+    margin: auto;
+    font-family: 'Just Me Again Down Here';
+    font-size: 30px;
+    position:absolute;
+    bottom:0;
+}
